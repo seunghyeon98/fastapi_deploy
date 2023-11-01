@@ -48,7 +48,7 @@ job:
 		env:
 			NAME: havi98
 			REPO: fastapi_11012004
-		run:
+		run: |
 			docker build -t $REPO .
 			docker tag $REPO:latest $NAME/$REPO:latest
 			docker push $NAME/$REPO:latest

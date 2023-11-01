@@ -45,12 +45,12 @@ job:
 			username: havi98
 			password: dckr_pat_eE9z0ifb3P4RJE9J_UNOENJYjkY
 	- name: build on release to dockerhub
-		env:
-			NAME: havi98
-			REPO: fastapi_11012004
-		run: |
-    	docker build -t havi98/fastapi_1101:latest .
-	    docker push havi98/fastapi_1101:latest
+    run: |
+          # 이미지 빌드
+      docker build -t havi98/fastapi_1101:latest .
+
+          # 이미지 푸시
+      docker push havi98/fastapi_1101:latest
 
 		
 		

@@ -29,7 +29,7 @@ job:
      username: havi98
      password: dckr_pat_eE9z0ifb3P4RJE9J_UNOENJYjkY
  - name: build on release to dockerhub
-   run:
+   run: |
      docker build -t havi98/fastapi_1101:latest .
      docker push havi98/fastapi_1101:latest
 

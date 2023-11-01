@@ -43,7 +43,7 @@ job:
 		uses: docker/login-action@v1
 		with:
 			username: havi98
-			password:dckr_pat_eE9z0ifb3P4RJE9J_UNOENJYjkY
+			password: dckr_pat_eE9z0ifb3P4RJE9J_UNOENJYjkY
 	- name: build on release to dockerhub
 		env:
 			NAME: havi98

@@ -51,8 +51,6 @@ job:
 		run: |
     	docker build -t havi98/fastapi_1101:latest .
 	    docker push havi98/fastapi_1101:latest
-			# docker build -t $REPO .
-			# docker tag $REPO:latest $NAME/$REPO:latest
-			# docker push $NAME/$REPO:latest
+
 		
 		
